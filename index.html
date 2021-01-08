@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/toaster-js/default.css"/>
+    <link rel="stylesheet" href="./style.css" type="text/css"/>
+</head>
+<body>
+    <header>
+        EXCHANGE APP
+    </header>
+    <div class="container">
+        <div class="currency-box" id="currency-box-from">
+            <p>From:</p>
+        </div>
+        <div class="currency-box" id="currency-box-to">
+            <p>To:</p>
+        </div>
+        <div class="currency-amount">
+            <label>Amount</label>
+            <input type="text" value="1" name="amount">
+        </div>
+        <div class="currency-calculate" id="calculate-button">
+            <button>Calculate</button>
+        </div>
+
+        <div class="currecy-result" id="currency-result">
+        </div>
+    </div>
+    <script type="text/javascript" src="https://unpkg.com/toaster-js/umd.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
