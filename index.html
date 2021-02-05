@@ -5,15 +5,17 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>CurrencyApp</title>
     <link rel="stylesheet" href="https://unpkg.com/toaster-js/default.css"/>
     <link rel="stylesheet" href="./style.css" type="text/css"/>
 </head>
 <body>
     <header>
+        <h1>
         EXCHANGE APP
+        </h1>
     </header>
-    <div class="container">
+    <main>
         <div class="currency-box" id="currency-box-from">
             <p>From:</p>
         </div>
@@ -21,16 +23,17 @@
             <p>To:</p>
         </div>
         <div class="currency-amount">
-            <label>Amount</label>
-            <input type="text" value="1" name="amount">
+            <label for="amount">Amount</label>
+            <input id="amount" type="number" value="1" name="amount">
         </div>
         <div class="currency-calculate" id="calculate-button">
             <button>Calculate</button>
         </div>
+    </main>
 
-        <div class="currecy-result" id="currency-result">
-        </div>
+    <div class="currecy-result" id="currency-result">
     </div>
+
     <script type="text/javascript" src="https://unpkg.com/toaster-js/umd.js"></script>
     <script src="./script.js"></script>
 </body>
